@@ -1,0 +1,65 @@
+version: "3.1"
+
+nlu:
+- intent: saudar
+  examples: |
+    - olá
+    - oi
+    - bom dia
+    - boa tarde
+    - boa noite
+    - hey
+    - e aí
+    - como vai
+    - tudo bem
+
+- intent: despedir
+  examples: |
+    - tchau
+    - até logo
+    - até mais
+    - adeus
+    - até breve
+    - foi um prazer
+    - tenha um bom dia
+    - preciso ir
+
+- intent: abrir_conta
+  examples: |
+    - quero abrir uma conta
+    - como faço para abrir uma conta
+    - preciso abrir uma conta
+    - gostaria de abrir conta
+    - processo para abertura de conta
+    - abertura de conta
+    - criar uma nova conta
+    - quais os passos para abrir conta
+    - requisitos para abrir conta
+
+- intent: afirmar
+  examples: |
+    - sim
+    - correto
+    - claro
+    - com certeza
+    - confirmo
+    - exato
+    - isso mesmo
+
+- intent: negar
+  examples: |
+    - não
+    - nunca
+    - negativo
+    - de jeito nenhum
+    - não quero
+    - agora não
+    - melhor não
+
+
+- intent: mudar_endereco
+  examples: |
+    - quero mudar o endereço
+    - mudei de cidade
+    - preciso atualizar meu endereço
+    

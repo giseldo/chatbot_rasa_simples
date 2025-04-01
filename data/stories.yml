@@ -1,0 +1,26 @@
+version: "3.1"
+
+stories:
+- story: saudação simples
+  steps:
+  - intent: saudar
+  - action: utter_saudar
+
+- story: despedida simples
+  steps:
+  - intent: despedir
+  - action: utter_despedir
+
+- story: abrir conta - confirmado
+  steps:
+  - intent: abrir_conta
+  - action: utter_abrir_conta_info
+  - intent: afirmar
+  - action: utter_confirmar_abertura
+
+- story: abrir conta - negado
+  steps:
+  - intent: abrir_conta
+  - action: utter_abrir_conta_info
+  - intent: negar
+  - action: utter_adia_abertura

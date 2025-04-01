@@ -1,0 +1,32 @@
+version: "3.1"
+
+intents:
+  - saudar
+  - despedir
+  - abrir_conta
+  - negar
+  - afirmar
+
+responses:
+  utter_saudar:
+    - text: "Olá! Como posso ajudá-lo hoje?"
+    - text: "Oi! Em que posso ser útil?"
+    - text: "Olá! Bem-vindo ao nosso serviço bancário virtual. Como posso ajudar?"
+
+  utter_despedir:
+    - text: "Até logo! Tenha um bom dia!"
+    - text: "Foi um prazer ajudá-lo. Até a próxima!"
+    - text: "Adeus! Estamos à disposição para quando precisar novamente."
+  
+  utter_abrir_conta_info:
+    - text: "Para abrir uma conta conosco, precisarei de algumas informações. Você gostaria de prosseguir agora?"
+  
+  utter_confirmar_abertura:
+    - text: "Ótimo! Para iniciar o processo de abertura de conta, você pode acessar nosso site ou visitar uma agência física com seus documentos (RG, CPF, comprovante de residência). Posso enviar um link com mais informações se desejar."
+  
+  utter_adia_abertura:
+    - text: "Sem problemas! Quando quiser abrir uma conta, é só me avisar."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
